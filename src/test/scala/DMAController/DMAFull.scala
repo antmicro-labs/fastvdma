@@ -78,7 +78,7 @@ class DMAFull(dut: DMATop) extends PeekPokeTester(dut){
   axil_master.writePush(0x18, height)
   axil_master.writePush(0x1c, 0)
 
-  axil_master.writePush(0x20, height * width * 4 + width * 2)
+  axil_master.writePush(0x20, 0)
   axil_master.writePush(0x24, width)
   axil_master.writePush(0x28, height)
   axil_master.writePush(0x2c, width)
